@@ -1,0 +1,45 @@
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 24px;
+    background-color: #181818;
+    margin: 0 -120px;
+    padding: 48px 120px;
+}
+
+footer div{
+    display: grid;
+    height: min-content;
+}
+
+.pusher{
+    padding-left: 12px;
+}
+
+@media only screen and (max-width: 620px) {
+
+    footer{
+        grid-template-columns: none;
+        margin: 0 -24px;
+        padding: 48px 24px;
+    }
+    
+    .pusher{
+        padding-left: 0;
+    }
+
+    .footerNav{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .socials{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .endTag{
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+}
